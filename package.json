@@ -1,0 +1,29 @@
+{
+  "name": "wbeebtctoken",
+  "version": "1.0.0",
+  "description": "This repository has the contracts that implement the wrapped tokens.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beekash-Payments-Systems-Ltd/WBeeBTCToken.git"
+  },
+  "author": "Gabriel Dagadu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Beekash-Payments-Systems-Ltd/WBeeBTCToken/issues"
+  },
+  "homepage": "https://github.com/Beekash-Payments-Systems-Ltd/WBeeBTCToken#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1"
+  }
+}
