@@ -12,16 +12,16 @@ async function main() {
 
   const lockedAmount = hre.ethers.parseEther("0.001");
 
-  const lock = await hre.ethers.deployContract("Lock", [unlockTime], {
+  const wBeeBTCToken = await hre.ethers.deployContract("WBeeBTCToken", [unlockTime], {
     value: lockedAmount,
   });
 
-  await lock.waitForDeployment();
+  await wBeeBTCToken.waitForDeployment();
 
   console.log(
-    `Lock with ${ethers.formatEther(
+    `WBeeBTCToken with ${ethers.formatEther(
       lockedAmount
-    )}ETH and unlock timestamp ${unlockTime} deployed to ${lock.target}`
+    )}ETH and unlock timestamp ${unlockTime} deployed to ${wBeeBTCToken.target}`
   );
 }
 
